@@ -1,4 +1,10 @@
-<svg
+import {SVGAttributes} from "react"
+
+interface LogoProps extends SVGAttributes<HTMLOrSVGElement> {}
+
+export function Logo(props: LogoProps) {
+  return (
+    <svg
       width={106}
       height={94}
       viewBox="0 0 106 94"
@@ -15,3 +21,5 @@
         fill="#81D1F7"
       />
     </svg>
+  )
+}
